@@ -32,7 +32,7 @@
 
 
 <div align="center">
-  <img src= "https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/a353d728-9e1a-415a-b681-cd21ef89079c"/>
+  <img src= "https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/dc6979bb-ffa6-4095-ab6c-9e23f539e298"/>
   <p><b> Fig 1. Illustration of several grouping principles. Common fate is a principle of Gestalt psychology that refers to the perceptual grouping of objec </b></p>
 </div>
 
