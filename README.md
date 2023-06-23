@@ -18,13 +18,6 @@
 ## 1. Understanding LIDARs
 
 
-
-----------
-
-## 2. Point Cloud Processing
-
-
-
 <div align="center">
   <img src= "https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/c02f7218-135e-4501-aa76-5a1a1980f0ce"/>
   <p><b> Fig 1. Illustration of several grouping principles. Common fate is a principle of Gestalt psychology that refers to the perceptua</b></p>
@@ -35,6 +28,14 @@
   <img src= "https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/dc6979bb-ffa6-4095-ab6c-9e23f539e298"/>
   <p><b> Fig 1. Illustration of several grouping principles. Common fate is a principle of Gestalt psychology that refers to the perceptual grouping of objec </b></p>
 </div>
+
+
+----------
+
+## 2. Point Cloud Processing
+
+
+![Process](https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/4a5ec421-41e1-46b0-9379-b7706045abb6)
 
 
 ------------
