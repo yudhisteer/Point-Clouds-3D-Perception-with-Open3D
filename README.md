@@ -25,10 +25,16 @@
 
 
 
-![000019](https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/c02f7218-135e-4501-aa76-5a1a1980f0ce)
+<div align="center">
+  <img src= "https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/c02f7218-135e-4501-aa76-5a1a1980f0ce"/>
+  <p><b> Fig 1. Illustration of several grouping principles. Common fate is a principle of Gestalt psychology that refers to the perceptua</b></p>
+</div>
 
 
-<img width="954" alt="image" src="https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/a353d728-9e1a-415a-b681-cd21ef89079c">
+<div align="center">
+  <img src= "https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/a353d728-9e1a-415a-b681-cd21ef89079c"/>
+  <p><b> Fig 1. Illustration of several grouping principles. Common fate is a principle of Gestalt psychology that refers to the perceptual grouping of objec </b></p>
+</div>
 
 
 ------------
@@ -57,6 +63,9 @@
 
 
 
+<div align="center">
+    <p>Image Source: <a href="https://www.researchgate.net/figure/Illustration-of-several-grouping-principles-Adapted-from-Perceptual-Organization-in_fig1_230587594">A Century of Gestalt Psychology in Visual Perception</a></p>
+</div>
 
 
 
