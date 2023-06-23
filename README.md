@@ -6,15 +6,22 @@
 
 ## Plan of Action
 
-1. Point Cloud Processing
-2. Downsampling with Voxel Grid
-3. Segmentation with RANSAC
-4. Clustering with DBSCAN
-5. 3D Bounding Box
+1. Understanding LIDARs
+2. Point Cloud Processing
+3. Downsampling with Voxel Grid
+4. Segmentation with RANSAC
+5. Clustering with DBSCAN
+6. 3D Bounding Box
 
 ----------------
 
-## 1. Point Cloud Processing
+## 1. Understanding LIDARs
+
+
+
+----------
+
+## 2. Point Cloud Processing
 
 
 
