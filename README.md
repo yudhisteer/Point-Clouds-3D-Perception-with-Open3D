@@ -18,6 +18,15 @@
 ## 1. Understanding LiDARs
 
 
+
+
+
+
+----------
+<a name="pcl"></a>
+## 2. Point Cloud Processing
+
+
 <table>
   <tr>
     <td>
@@ -32,16 +41,6 @@
     </td>
   </tr>
 </table>
-
-
-
-----------
-<a name="pcl"></a>
-## 2. Point Cloud Processing
-
-
-![Process](https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/4a5ec421-41e1-46b0-9379-b7706045abb6)
-
 
 ------------
 
