@@ -6,16 +6,16 @@
 
 ## Plan of Action
 
-1. Understanding LIDARs
-2. Point Cloud Processing
-3. Downsampling with Voxel Grid
-4. Segmentation with RANSAC
-5. Clustering with DBSCAN
-6. 3D Bounding Box
+1. [Understanding LiDARs](#ul)
+2. [Point Cloud Processing](#pcl)
+3. [Downsampling with Voxel Grid](#dvg)
+4. [Segmentation with RANSAC](#sr)
+5. [Clustering with DBSCAN](#cd)
+6. [3D Bounding Box](#3bb)
 
 ----------------
-
-## 1. Understanding LIDARs
+<a name="ul"></a>
+## 1. Understanding LiDARs
 
 
 <table>
@@ -36,7 +36,7 @@
 
 
 ----------
-
+<a name="pcl"></a>
 ## 2. Point Cloud Processing
 
 
@@ -45,22 +45,22 @@
 
 ------------
 
-
+<a name="dvg"></a>
 ## 2. Downsampling with Voxel Grid
 
 
 ----------
-
+<a name="sr"></a>
 ## 3. Segmentation with RANSAC
 
 
 ------------
-
+<a name="cd"></a>
 ## 4. Clustering with DBSCAN
 
 
 ----------
-
+<a name="3bb"></a>
 ## 5. 3D Bounding Box
 
 
