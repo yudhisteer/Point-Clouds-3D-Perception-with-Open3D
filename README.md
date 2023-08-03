@@ -26,7 +26,7 @@ LiDAR technology operates by emitting short laser **pulses** toward the target a
 
 
 <p align="center">
-  <img src="https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/16ef46d1-7bc3-4912-a923-6790c8b1d1b5.png" alt="CodeCogsEqn" width="100" />
+  <img src="https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/16ef46d1-7bc3-4912-a923-6790c8b1d1b5.png" alt="CodeCogsEqn" />
 </p>
 
 
