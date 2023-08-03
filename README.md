@@ -18,7 +18,28 @@
 ## 1. Understanding LiDARs
 
 
+### 1.1 What is a LiDAR?
+LiDAR stands for ```Light Detection And Ranging```. It is a **active remote sensing** technology that uses laser pulses to measure **distances** and create precise **3D representations** of objects and environments. Note that an active system generates its **own energy**, in this case, light, to measure objects or features on the ground. By **emitting** laser beams and measuring their **reflections**, LiDAR captures detailed spatial data, making it valuable in various fields like mapping, environmental monitoring, forestry, and ```autonomous vehicles```. 
 
+### 1.2 How LiDAR works?
+LiDAR technology operates by emitting short laser **pulses** toward the target area. These pulses hit surrounding objects and return to the LiDAR sensor. By calculating the time it takes for the pulses to return (**time of flight**), the system determines the **distance** to each object with incredible accuracy. Additionally, LiDAR can measure the **intensity** of the returned laser light, providing information about the objects' **reflectivity** or **composition**.
+
+
+<p align="center">
+  <img src="https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/16ef46d1-7bc3-4912-a923-6790c8b1d1b5.png" alt="CodeCogsEqn" width="100" />
+</p>
+
+
+- **Waveform**: Distribution of energy that returns to the sensor 
+- **Intensity**: Amount of energy that returned to the sensor
+- **Peaks**: Areas where more photons or more light energy returns to the sensor
+
+
+
+
+
+
+### 1.3 Types of LiDAR
 
 
 
