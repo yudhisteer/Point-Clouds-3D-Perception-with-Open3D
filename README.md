@@ -98,6 +98,8 @@ In our analysis, we will employ the KITTI Dataset, which includes synchronous st
   </tr>
 </table>
 
+### 2.1 Visualization
+
 In this project, there are several libraries and software available for point cloud processing. Among them, two commonly used libraries are **Open3D** and **PCL**. For this project, we will exclusively utilize **Open3D**. The reason for this choice is its user-friendly nature and the abundant literature available on it. Our point cloud has already been transformed into the ```.ply``` format, allowing us to employ the ```read_point_cloud function``` from Open3D as follows:
 
 ```python
@@ -202,14 +204,14 @@ Notice, that points further away are in the shades of yellow as shown with the c
 
 Observe that the billboard on the right or the license plate of the car or even the lane lines have a higher reflectance and a brighter shade of red. We will work more on this later.
 
+### 2.2 Thresholding
 
 
 
 
 
 
-
-
+### 2.3 Region of Interest
 
 
 
