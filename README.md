@@ -11,7 +11,7 @@
 3. [Downsampling with Voxel Grid](#dvg)
 4. [Segmentation with RANSAC](#sr)
 5. [Clustering with DBSCAN](#cd)
-6. [3D Bounding Box](#3bb)
+6. [3D Bounding Box with PCA](#3bb)
 
 ----------------
 <a name="ul"></a>
