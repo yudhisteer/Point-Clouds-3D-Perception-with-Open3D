@@ -60,7 +60,7 @@
 
 ----------
 <a name="3bb"></a>
-## 5. 3D Bounding Box
+## 5. 3D Bounding Box with PCA
 
 
 ----------
