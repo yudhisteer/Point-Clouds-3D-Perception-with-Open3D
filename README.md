@@ -42,20 +42,24 @@ LiDAR technology operates by emitting short laser **pulses** toward the target a
   <img src="https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/639ae999-2fdf-45ec-b4d7-f186527053c8" width="50%" />
 </p>
 
-**1. Mechanical LiDAR**:
+**1. Mechanical LiDAR**: Employ moving parts, typically rotating mirrors or oscillating prisms, to steer the laser beam and scan the surroundings, achieving a 360-degree field of view.
+
+**2. Solid-State LiDAR**: Use semiconductor components to generate and manipulate laser beams, eliminating the need for moving parts. This design enhances reliability and reduces size and weight.
+
+**- MEMs**: Micro-Electro-Mechanical Systems (MEMS) LiDAR leverages tiny, microfabricated mirrors to direct laser beams. MEMS LiDARs offer high-speed scanning capabilities and compact form factors.
+
+**- OPA**: Optical Phased Array (OPA) LiDAR utilizes electronically controlled optical elements to steer laser beams without moving parts. OPA LiDARs provide rapid beam steering, allowing for real-time data acquisition and high-resolution mapping.
 
 
-**2. Solid-State LiDAR**:
+**3. Flash LiDAR**: Also known as "single-shot" or "non-scanning" LiDAR, illuminates the entire field of view simultaneously with a single pulse of laser light. This type of LiDAR offers high data acquisition rates, making it suitable for real-time applications.
 
 
-**- MEMs**:
-
-
-
-**- OPA**:
-
-
-**3. Flash LiDAR**:
+<p align="center">
+  <img src="https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/4cf1c007-dace-48fb-b532-56392e335cad" width="50%" />
+</p>
+<div align="center">
+    <p>Image Source: <a href="https://www.semanticscholar.org/paper/Lidar-for-Autonomous-Driving%3A-The-Principles%2C-and-Li-Iba%C3%B1ez-Guzm%C3%A1n/586e90ae16e480217709e735f5aa0752aedc8e62">Lidar for Autonomous Driving: The Principles, Challenges, and Trends for Automotive Lidar and Perception Systems</a></p>
+</div>
 
 
 ### 1.4 Types of LiDAR Data
