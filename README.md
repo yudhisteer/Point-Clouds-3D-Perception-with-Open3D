@@ -34,12 +34,14 @@ LiDAR technology operates by emitting short laser **pulses** toward the target a
 - **Intensity**: Amount of energy that returned to the sensor
 - **Peaks**: Areas where more photons or more light energy returns to the sensor
 
-
-
-
-
-
 ### 1.3 Types of LiDAR
+
+<p align="center">
+  <img src="https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/1e2c8522-750e-43e6-a0c2-6830e0ba7d31" width="50%" />
+</p>
+
+
+### 1.4 Types of LiDAR Data
 
 
 
