@@ -36,9 +36,26 @@ LiDAR technology operates by emitting short laser **pulses** toward the target a
 
 ### 1.3 Types of LiDAR
 
+#### 1.3.1 Scanning
+
 <p align="center">
-  <img src="https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/1e2c8522-750e-43e6-a0c2-6830e0ba7d31" width="50%" />
+  <img src="https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/639ae999-2fdf-45ec-b4d7-f186527053c8" width="50%" />
 </p>
+
+**1. Mechanical LiDAR**:
+
+
+**2. Solid-State LiDAR**:
+
+
+**- MEMs**:
+
+
+
+**- OPA**:
+
+
+**3. Flash LiDAR**:
 
 
 ### 1.4 Types of LiDAR Data
