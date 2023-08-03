@@ -81,36 +81,7 @@ LiDAR technology operates by emitting short laser **pulses** toward the target a
 ----------
 <a name="pcl"></a>
 ## 2. Point Cloud Processing
-
-
-
-
-
-
-
-
-
-<p align="center">
-  <img src="https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/dc213cb8-944e-427c-bada-3c0952fcc49e" width="70%" />
-</p>
-
-
-
-<p align="center">
-  <img src="https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/35b51000-dbaf-4492-af3e-12de72ab6ed3" width="70%" />
-</p>
-
-
-
-
-
-
-
-
-
-
-
-
+In our analysis, we will employ the KITTI Dataset, which includes synchronous stereo images and LiDAR data. This dataset captures two pairs of images, taken at regular time intervals, using their stereo system. Additionally, their Velodyne LiDAR generates a corresponding point cloud. As a result, we can visualize the scene in 2D using the images and in 3D using the point cloud, as demonstrated below:
 
 <table>
   <tr>
@@ -126,6 +97,124 @@ LiDAR technology operates by emitting short laser **pulses** toward the target a
     </td>
   </tr>
 </table>
+
+In this project, there are several libraries and software available for point cloud processing. Among them, two commonly used libraries are **Open3D** and **PCL**. For this project, we will exclusively utilize **Open3D**. The reason for this choice is its user-friendly nature and the abundant literature available on it. Our point cloud has already been transformed into the ```.ply``` format, allowing us to employ the ```read_point_cloud function``` from Open3D as follows:
+
+```python
+point_cloud = open3d.io.read_point_cloud(point_cloud_path)
+```
+
+After reading the file, there are numerous ways to visualize the point cloud with Open3D:
+
+```python
+o3d.visualization.draw_geometries([point_cloud])
+```
+Or:
+
+```python
+vis = open3d.visualization.Visualizer()
+vis.create_window()
+vis.add_geometry(point_cloud)
+vis.get_render_option().background_color = np.asarray([0, 0, 0])
+vis.run()
+vis.destroy_window()
+```
+Or with ```get_plotly_fig``` from **plotly**. (However, I was having some error using ```get_plotly_fig```, hence I created my custom function). The function below allows us to encode either the **distance** with color or use the **reflectance** data from the point cloud itself. 
+
+```python
+def mode_plotly(point_cloud, mode='reflectance'):
+        # Extract the point cloud's coordinates as a numpy array
+        points = np.asarray(point_cloud.points)
+
+        # Calculate distances from the origin
+        distances = np.linalg.norm(points, axis=1)
+
+        # Check if the point cloud has color information
+        if hasattr(point_cloud, 'colors') and len(point_cloud.colors) == len(point_cloud.points):
+            colors = np.asarray(point_cloud.colors)
+            color_values = distances
+        else:
+            colors = np.zeros((len(point_cloud.points), 3))  # Default to black color if no colors provided
+
+        if mode == 'reflectance':
+            fig = go.Figure(data=[go.Scatter3d(
+                x=points[:, 0],
+                y=points[:, 1],
+                z=points[:, 2],
+                mode='markers',
+                marker=dict(
+                    size=2,
+                    color=colors,
+                    opacity=0.8
+                )
+            )])
+
+        elif mode == 'distance':
+            fig = go.Figure(data=[go.Scatter3d(
+                x=points[:, 0],
+                y=points[:, 1],
+                z=points[:, 2],
+                mode='markers',
+                marker=dict(
+                    size=2,
+                    color=color_values,  # use color_values for color
+                    colorscale='electric',  # choose a colorscale
+                    colorbar=dict(title="Distance"),  # add a colorbar title
+                    opacity=0.8
+                )
+            )])
+
+        else:
+            print("Wrong mode chosen! Choose either: 'reflectance' OR 'distance'!")
+
+        # Update the scene layout if needed
+        fig.update_layout(
+            scene=dict(
+                xaxis=dict(visible=False, range=[-70, 70]),
+                yaxis=dict(visible=False, range=[-40, 40]),
+                zaxis=dict(visible=False, range=[-5, 1]),
+                aspectmode='manual', aspectratio=dict(x=2, y=1, z=0.1),
+                camera=dict(
+                    up=dict(x=0.15, y=0, z=1),
+                    center=dict(x=0, y=0, z=0.1),
+                    eye=dict(x=-0.3, y=0, z=0.2)
+                )
+            ),
+            # plot_bgcolor='black', #background
+            # paper_bgcolor='black', #background
+            scene_dragmode='orbit'
+        )
+
+        return fig
+```
+
+If we want to visualize the point cloud with the **distance** encoded with color:
+
+<p align="center">
+  <img src="https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/35b51000-dbaf-4492-af3e-12de72ab6ed3" width="70%" />
+</p>
+
+Notice, that points further away are in the shades of yellow as shown with the color bar on the right. Now, if we want to visualize the point cloud with the **reflectance** encoded with color:
+
+<p align="center">
+  <img src="https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/dc213cb8-944e-427c-bada-3c0952fcc49e" width="70%" />
+</p>
+
+Observe that the billboard on the right or the license plate of the car or even the lane lines have a higher reflectance and a brighter shade of red. We will work more on this later.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ------------
 
