@@ -83,6 +83,33 @@ LiDAR technology operates by emitting short laser **pulses** toward the target a
 ## 2. Point Cloud Processing
 
 
+
+
+
+
+
+
+
+
+<img width="816" alt="image" src="https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/dc213cb8-944e-427c-bada-3c0952fcc49e">
+
+
+
+
+<img width="920" alt="image" src="https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/35b51000-dbaf-4492-af3e-12de72ab6ed3">
+
+
+
+
+
+
+
+
+
+
+
+
+
 <table>
   <tr>
     <td>
