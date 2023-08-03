@@ -12,6 +12,8 @@
 4. [Segmentation with RANSAC](#sr)
 5. [Clustering with DBSCAN](#cd)
 6. [3D Bounding Box with PCA](#3bb)
+7. [Surface Reconstruction](#sr)
+
 
 ----------------
 <a name="ul"></a>
