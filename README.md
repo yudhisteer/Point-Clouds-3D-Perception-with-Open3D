@@ -168,9 +168,15 @@ With the thresholding technique, we filtered out all point clouds having reflect
 
 ### 2.3 Region of Interest
 
+```python
+    # Region of Interest
+    roi_point_cloud = roi_filter(point_cloud, roi_min=(0, -3, -2), roi_max=(20, 3, 0))
+```
 
 
-
+<p align="center">
+  <img src="https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/743c49bb-0b0a-47a1-9a2d-0f5830270a03" width="70%" />
+</p>
 
 
 ------------
