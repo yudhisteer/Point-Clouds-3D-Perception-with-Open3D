@@ -208,23 +208,21 @@ https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/dcd6467
 
 
 <p align="center">
-  <img style="width: 80%; height: auto;" alt="Image 1" src="https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/45b28e06-062a-44c9-bfa1-7e303256d06f">
   <img style="width: 80%; height: auto;" alt="Image 2" src="https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/95e1c621-2718-45e2-a7ec-1e2aff4c79fc">
 </p>
 
 
 <table>
   <tr>
-    <td align="center">Voxel=0.1</td>
-    <td align="center">Voxel=0.5</td>
-    <td align="center">Voxel=1.0</td>
+    <th align="center">Voxel=0.1</th>
+    <th align="center">Voxel=0.5</th>
+    <th align="center">Voxel=1.0</th>
   </tr>
   <tr>
     <td><img width="802" alt="Image 1" src="https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/87648f00-cd30-4c54-b6c3-26d41b3327d1"></td>
     <td><img width="822" alt="Image 2" src="https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/d310bb6a-e4b5-42b9-a149-3949d993906f"></td>
     <td><img width="828" alt="Image 3" src="https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/838d0e14-8ba4-4678-bc47-5e2db5e5c343"></td>
   </tr>
-
 </table>
 
 
