@@ -246,6 +246,9 @@ The downsampling process results in a point cloud with a reduced number of point
 <a name="sr"></a>
 ## 3. Segmentation with RANSAC
 
+<p align="center">
+  <img src="https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/c3ce774b-e861-4de2-857b-f87e7fc30d38" width="70%" />
+</p>
 
 ------------
 <a name="cd"></a>
