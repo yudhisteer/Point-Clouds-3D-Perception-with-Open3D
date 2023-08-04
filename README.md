@@ -203,15 +203,13 @@ https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/dcd6467
 
 <a name="dvg"></a>
 ## 2. Downsampling with Voxel Grid
+Notice that when processing our point cloud, it is not necessary to have all the points. In fact, it can a better idea to downsample our point cloud to remove any potential noise, or for faster processing and visualization. The steps to Voxel Grid Downsampling are as follows:
 
-
-
-
-<p align="center">
-  <img style="width: 80%; height: auto;" alt="Image 2" src="https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/95e1c621-2718-45e2-a7ec-1e2aff4c79fc">
-</p>
-
-
+1. Define the **Voxel Size**: Smaller voxel sizes will result in a more detailed point cloud, while larger voxel sizes will lead to more aggressive downsampling.
+2. Divide the **Space**: The 3D space of the point cloud is divided into voxels by creating a 3D grid. Each point in the point cloud is assigned to the voxel it falls into based on its 3D coordinates.
+3. **Subsampling**: For each voxel, one point is retained. This can be achieved by selecting the ```centroid``` of the points within the voxel or by using other sampling methods.
+4. **Remove Redundant Points**: Points that fall into the same voxel are reduced to one point, effectively downsampling the point cloud.
+   
 <table>
   <tr>
     <th align="center">Voxel=0.1</th>
@@ -229,6 +227,19 @@ https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/dcd6467
     <td align="center">#points = 5922</td>
   </tr>
 </table>
+
+```python
+    # Voxel Grid
+    point_cloud_downsampled = point_cloud.voxel_down_sample(voxel_size=1)
+```
+
+The downsampling process results in a point cloud with a reduced number of points while still retaining its main features.
+
+<p align="center">
+  <img style="width: 80%; height: auto;" alt="Image 2" src="https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/95e1c621-2718-45e2-a7ec-1e2aff4c79fc">
+</p>
+
+
 
 
 ----------
