@@ -31,6 +31,8 @@ LiDAR technology operates by emitting short laser **pulses** toward the target a
   <img src="https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/16ef46d1-7bc3-4912-a923-6790c8b1d1b5.png"/>
 </p>
 
+Note that we divide by ```2``` in the equation because we only want  
+
 
 - **Waveform**: Distribution of energy that returns to the sensor 
 - **Intensity**: Amount of energy that returned to the sensor
