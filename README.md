@@ -245,8 +245,13 @@ The downsampling process results in a point cloud with a reduced number of point
 ----------
 <a name="sr"></a>
 ## 3. Segmentation with RANSAC
+RANSAC (```Random Sample Consensus```) was invented by Fischler and Bolles in ```1981``` as a solution to the problem of fitting models (such as lines, planes, circles, etc.) to noisy data with outliers. The algorithm is widely used in computer vision, image processing, and other fields where robust estimation of model parameters is required.
 
-
+1. Randomly choose ```s``` samples which is the minimum number of samples to fit a model.
+2. Fit the model to the randomly chosen samples.
+3. Count the number ```M``` of datapoints which fit the model within a measure of error ```e```.
+4. Repeat steps 1-3 ```N``` times.
+5. Choose the model that has the highest number of ```M``` inliers.
 
 <div align="center">
   <table>
@@ -264,7 +269,7 @@ The downsampling process results in a point cloud with a reduced number of point
     <p>Image Source: <a href="https://towardsdatascience.com/random-sample-consensus-helps-you-filter-those-pesky-outliers-9dbfbb8b668f">Random sample consensus helps you filter those pesky outliers</a></p>
 </div>
 
-
+In our scenario, we choose ```ransac_n``` equal to ```3```, which is the number of points to randomly sample for each iteration of RANSAC, and ```num_iterations``` equal to ```2000``` which is the number of RANSAC iterations to perform.
 
 
 ```python
@@ -275,11 +280,7 @@ The downsampling process results in a point cloud with a reduced number of point
     inlier_cloud = point_cloud.select_by_index(inliers)
     outlier_cloud = point_cloud.select_by_index(inliers, invert=True)
 ```
-
-
-
-
-
+Observe how the plane which is the road is segmented from all other vertical objects such as cars, trees, billboards, and so on. The inliers are the road segment and the outliers are the rest.
 
 <p align="center">
   <img src="https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/c3ce774b-e861-4de2-857b-f87e7fc30d38" width="70%" />
