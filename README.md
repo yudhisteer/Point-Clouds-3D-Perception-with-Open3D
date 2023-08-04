@@ -223,6 +223,11 @@ https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/dcd6467
     <td><img width="822" alt="Image 2" src="https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/d310bb6a-e4b5-42b9-a149-3949d993906f"></td>
     <td><img width="828" alt="Image 3" src="https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/838d0e14-8ba4-4678-bc47-5e2db5e5c343"></td>
   </tr>
+  <tr>
+    <td align="center">#points = 45803</td>
+    <td align="center">#points = 13811</td>
+    <td align="center">#points = 5922</td>
+  </tr>
 </table>
 
 
