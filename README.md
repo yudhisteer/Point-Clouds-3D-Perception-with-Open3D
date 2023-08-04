@@ -246,6 +246,41 @@ The downsampling process results in a point cloud with a reduced number of point
 <a name="sr"></a>
 ## 3. Segmentation with RANSAC
 
+
+
+<div align="center">
+  <table>
+    <tr>
+      <td align="center">
+        <img src="https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/b96bb593-a38b-4d44-8893-b154cddde7ce" alt="Image 1" style="height: 400px;">
+      </td>
+      <td align="center">
+        <img src="https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/4dbc3882-c7b8-404c-913b-f14982ae2d06" alt="Image 2" style="height: 400px;">
+      </td>
+    </tr>
+  </table>
+</div>
+<div align="center">
+    <p>Image Source: <a href="https://towardsdatascience.com/random-sample-consensus-helps-you-filter-those-pesky-outliers-9dbfbb8b668f">Random sample consensus helps you filter those pesky outliers</a></p>
+</div>
+
+
+
+
+```python
+    # Perform plane segmentation using RANSAC
+    plane_model, inliers = point_cloud.segment_plane(distance_threshold=distance_threshold, ransac_n=ransac_n, num_iterations=num_iterations)
+
+    # Extract inlier and outlier point clouds
+    inlier_cloud = point_cloud.select_by_index(inliers)
+    outlier_cloud = point_cloud.select_by_index(inliers, invert=True)
+```
+
+
+
+
+
+
 <p align="center">
   <img src="https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/c3ce774b-e861-4de2-857b-f87e7fc30d38" width="70%" />
 </p>
@@ -279,4 +314,5 @@ The downsampling process results in a point cloud with a reduced number of point
 2. https://velodynelidar.com/blog/guide-to-lidar-wavelengths/
 3. https://www.neonscience.org/resources/learning-hub/tutorials/lidar-basics
 4. https://www.neonscience.org/resources/learning-hub/tutorials/plasio-view-pointclouds
-5. 
+5. https://towardsdatascience.com/random-sample-consensus-helps-you-filter-those-pesky-outliers-9dbfbb8b668f
+6. https://www.youtube.com/watch?v=EkYXjmiolBg&ab_channel=FirstPrinciplesofComputerVision
