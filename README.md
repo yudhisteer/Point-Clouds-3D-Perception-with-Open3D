@@ -140,16 +140,30 @@ If we want to visualize the point cloud with the **distance** encoded with color
 Notice, that points further away are in the shades of yellow as shown with the color bar on the right. Now, if we want to visualize the point cloud with the **reflectance** encoded with color:
 
 <p align="center">
-  <img src="https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/dc213cb8-944e-427c-bada-3c0952fcc49e" width="70%" />
+  <img src="https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/35e20921-d514-40fc-8c24-f550de8679b3" width="70%" />
 </p>
 
-Observe that the billboard on the right or the license plate of the car or even the lane lines have a higher reflectance and a brighter shade of red. We will work more on this later.
+
+Observe that the billboard on the right or the license plate of the car or even the lane lines have a higher reflectance and a darker shade of red. We will work more on this later.
 
 ### 2.2 Thresholding
+Let's build a ```lane line detection``` using **reflectance** data from our point cloud. From the image above, when we look closely, we can see traces of the lane lines with darker shades of red. We will now filter the point cloud with higher reflectance values. The steps:
 
+1. Get the reflectivity values
+2. Create a mask of points that have reflectivity above the threshold
+3. Filter points and reflectivities using the mask
+4. Create a new point cloud with the filtered points and colors
 
+```python
+    # Thresholding
+    filtered_point_cloud = reflectivity_threshold(point_cloud, threshold=0.5)
+```
 
+<p align="center">
+  <img src="https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/0525bebf-9bf0-45ea-a6ee-ffe4d7264135" width="70%" />
+</p>
 
+With the thresholding technique, we filtered out all point clouds having reflectivity values below ```0.5```. Observe, how the lane lines are more visible, but also the license plate and the guardrails on the side. We are interested only in the lane lines hence, we need to filter those out.
 
 
 ### 2.3 Region of Interest
