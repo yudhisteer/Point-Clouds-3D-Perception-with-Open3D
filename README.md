@@ -166,18 +166,38 @@ Let's build a ```lane line detection``` using **reflectance** data from our poin
 With the thresholding technique, we filtered out all point clouds having reflectivity values below ```0.5```. Observe, how the lane lines are more visible, but also the license plate and the guardrails on the side. We are interested only in the lane lines hence, we need to filter those out.
 
 
-### 2.3 Region of Interest
+### 2.3 Region of Interest (ROI)
+Now that we have the filtered reflectance values, we need to manually create an ROI that will encompass the lane lines. We need to set the **min** and **max** values for the ROI as such:
 
 ```python
     # Region of Interest
     roi_point_cloud = roi_filter(point_cloud, roi_min=(0, -3, -2), roi_max=(20, 3, 0))
 ```
 
-
 <p align="center">
   <img src="https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/743c49bb-0b0a-47a1-9a2d-0f5830270a03" width="70%" />
 </p>
 
+When we are satisfied with our selected ROI, we then need to create a **pipeline** using the ```reflectivity_threshold``` function and the ```roi_filter``` function. 
+
+```python
+    # Lane Line Detection
+    def lane_line_detection(point_cloud):
+        # Make a copy
+        point_cloud_copy = copy.deepcopy(point_cloud)
+
+        # Thresholding
+        filtered_point_cloud = reflectivity_threshold(point_cloud_copy, threshold=0.45)
+    
+        # Region of Interest
+        roi_point_cloud = roi_filter(filtered_point_cloud, roi_min=(0, -3, -2), roi_max=(20, 3, 0))
+    
+        return roi_point_cloud
+```
+
+Below is a video of the output:
+
+https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/dcd64671-662e-4b8c-a5c9-adbd0d795dff
 
 ------------
 
