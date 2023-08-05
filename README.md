@@ -257,10 +257,10 @@ RANSAC (```Random Sample Consensus```) was invented by Fischler and Bolles in ``
   <table>
     <tr>
       <td align="center">
-        <img src="https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/b96bb593-a38b-4d44-8893-b154cddde7ce" alt="Image 1" style="height: 400px;">
+        <img src="https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/b96bb593-a38b-4d44-8893-b154cddde7ce" alt="Image 1" style="height: 300px;">
       </td>
       <td align="center">
-        <img src="https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/4dbc3882-c7b8-404c-913b-f14982ae2d06" alt="Image 2" style="height: 400px;">
+        <img src="https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/4dbc3882-c7b8-404c-913b-f14982ae2d06" alt="Image 2" style="height: 300px;">
       </td>
     </tr>
   </table>
