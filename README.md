@@ -290,6 +290,11 @@ Observe how the plane which is the road is segmented from all other vertical obj
 <a name="cd"></a>
 ## 4. Clustering with DBSCAN
 
+<p align="center">
+  <img src="https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/746bf267-188c-45ce-bd71-a2ab9f2cfa8f" width="70%" />
+</p>
+
+
 
 ----------
 <a name="3bb"></a>
