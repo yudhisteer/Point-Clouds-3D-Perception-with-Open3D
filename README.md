@@ -302,6 +302,31 @@ Notice that the road is one cluster and all the other obstacles are separate clu
 ## 5. 3D Bounding Box with PCA
 
 
+
+
+
+
+
+
+The function first calculates the centroid of the point cloud subset. The centroid is the average position of all points in the subset, and it represents the center of mass.
+
+Next, it computes the covariance matrix of the point cloud subset. The covariance matrix is a square matrix that summarizes the relationships between different dimensions (X, Y, Z) of the point cloud data.
+
+PCA is then applied to the covariance matrix to find the eigenvectors and eigenvalues. Eigenvectors are the directions in which the data has the most variation, and eigenvalues represent the magnitude of that variation along each eigenvector.
+
+The eigenvector with the largest eigenvalue corresponds to the longest axis of the OBB and represents the direction in which the point cloud is most spread out. The eigenvector with the smallest eigenvalue corresponds to the shortest axis of the OBB and represents the direction in which the point cloud is most compressed.
+
+The function uses these eigenvectors to define the orientation (rotation) of the OBB. It aligns the OBB with the eigenvectors, so the box represents the point cloud's principal directions.
+
+The size of the OBB along each axis is determined by the spread of the points along the corresponding eigenvector.
+
+
+<p align="center">
+  <img src="https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/11dc95f4-7052-4ab1-9f04-98518ff023ae" width="70%" />
+</p>
+
+
+
 ----------
 
 
