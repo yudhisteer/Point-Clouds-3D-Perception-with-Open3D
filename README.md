@@ -289,6 +289,22 @@ Observe how the plane which is the road is segmented from all other vertical obj
 ------------
 <a name="cd"></a>
 ## 4. Clustering with DBSCAN
+DBSCAN (Density-Based Spatial Clustering of Applications with Noise) is a density-based clustering algorithm proposed by Martin Ester, Hans-Peter Kriegel, Jörg Sander, and Xiaowei Xu in 1996. It is particularly suitable for datasets with complex structures and a need for automatic cluster detection. 
+
+1. Choose parameters ```ε``` and ```MinPts``` that define the **neighborhood** of a data point and the **minimum points** for forming core points, respectively.
+2. Mark data points as **core points** if they have at least MinPts points within ε-neighborhood.
+3. A point A is directly **density-reachable** from B if B is core and A is within its ε-neighborhood.
+4. Density-reachability is **transitive**, forming density-based clusters by linking mutually density-reachable points.
+5. ```Noise points``` are **outliers**, not core, and not density-reachable from any core point.
+
+In our scenario, we will use an eps value of ```1.5``` which is the maximum distance between two points for one to be considered as in the neighborhood of the other, and a ```min_points``` value of ```50``` which signifies the minimum number of points required to form a dense region (core points).
+
+```python
+    labels = np.array(outlier_cloud.cluster_dbscan(eps=eps, min_points=min_points, print_progress=True))
+```
+
+Notice that the road is one cluster and all the other obstacles are separate clusters represented in different colors.
+
 
 <p align="center">
   <img src="https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/746bf267-188c-45ce-bd71-a2ab9f2cfa8f" width="70%" />
