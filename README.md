@@ -253,21 +253,6 @@ RANSAC (```Random Sample Consensus```) was invented by Fischler and Bolles in ``
 4. Repeat steps 1-3 ```N``` times.
 5. Choose the model that has the highest number of ```M``` inliers.
 
-<div align="center">
-  <table>
-    <tr>
-      <td align="center">
-        <img src="https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/b96bb593-a38b-4d44-8893-b154cddde7ce" alt="Image 1" style="height: 300px;">
-      </td>
-      <td align="center">
-        <img src="https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/4dbc3882-c7b8-404c-913b-f14982ae2d06" alt="Image 2" style="height: 300px;">
-      </td>
-    </tr>
-  </table>
-</div>
-<div align="center">
-    <p>Image Source: <a href="https://towardsdatascience.com/random-sample-consensus-helps-you-filter-those-pesky-outliers-9dbfbb8b668f">Random sample consensus helps you filter those pesky outliers</a></p>
-</div>
 
 In our scenario, we choose ```ransac_n``` equal to ```3```, which is the number of points to randomly sample for each iteration of RANSAC, and ```num_iterations``` equal to ```2000``` which is the number of RANSAC iterations to perform.
 
