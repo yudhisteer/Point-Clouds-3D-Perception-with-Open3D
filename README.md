@@ -341,30 +341,36 @@ Note that the ```get_oriented_bounding_box``` function from Open3D performs the 
  "normals" refer to the direction vectors that are perpendicular to the surfaces of the points. For each point in the point cloud, a normal vector is calculated to indicate the direction of the surface at that point. Normals are used to estimate the orientation of surfaces and to reconstruct smooth surfaces from a point cloud.
 
 
-<p align="center">
-  <img src="https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/b567d2f5-4891-4c5b-90ee-ddcc286bd2ea" width="70%" />
-</p>
-
-
-
 <table align="center">
   <tr>
     <td>
-      <video width="100%" controls>
-        <source src="https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/81dc7f24-729b-4e68-80a6-4977d8300e51" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
+      <p align="center">
+        <img src="https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/b567d2f5-4891-4c5b-90ee-ddcc286bd2ea" width="100%" />
+      </p>
     </td>
     <td>
-      <video width="100%" controls>
-        <source src="https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/69bed40c-2b07-449e-86b0-349ae7e41d4a" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
+      <p align="center">
+        <img src="https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/77adac85-cfed-49b8-8fb1-5e90a81b25ff" width="100%" />
+      </p>
     </td>
   </tr>
 </table>
 
 
+<img width="563" alt="image" src="https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/e7b8c138-fdcd-48f5-8c1e-5d837ed6f3f7">
+
+
+
+https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/7c95f0dc-e3b9-4929-ae0c-62177c4af85b
+
+<table>
+  <tr>
+    <td><img src="https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/7c95f0dc-e3b9-4929-ae0c-62177c4af85b" alt="Image 1" style="height: 300px;"></td>
+    <td><img src="https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/69bed40c-2b07-449e-86b0-349ae7e41d4a" alt="Image 2" style="height: 300px;"></td>
+  </tr>
+</table>
+
+![ezgif com-optimize](https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/a99f62b9-3198-47bb-b38d-4efa0c21ee5e)
 
 
 
