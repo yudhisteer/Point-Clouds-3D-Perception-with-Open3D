@@ -332,12 +332,40 @@ After successfully clustering our obstacles, the next step is to enclose them wi
 Note that the ```get_oriented_bounding_box``` function from Open3D performs the PCA function for us behind the scenes. We use the outlier point cloud subset as these corresponds the cars and other objects whereas the inliers represent the road.
 
 <p align="center">
-  <img src="https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/11dc95f4-7052-4ab1-9f04-98518ff023ae" width="70%" />
-</p>
-
+  <img src="https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/11dc95f4-7052-4ab1-9f04-98518ff023ae
 ----------
+    
 <a name="sr"></a>
 ## 7. Surface Reconstruction
+
+ "normals" refer to the direction vectors that are perpendicular to the surfaces of the points. For each point in the point cloud, a normal vector is calculated to indicate the direction of the surface at that point. Normals are used to estimate the orientation of surfaces and to reconstruct smooth surfaces from a point cloud.
+
+
+<p align="center">
+  <img src="https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/b567d2f5-4891-4c5b-90ee-ddcc286bd2ea" width="70%" />
+</p>
+
+
+
+<table align="center">
+  <tr>
+    <td>
+      <video width="100%" controls>
+        <source src="https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/81dc7f24-729b-4e68-80a6-4977d8300e51" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </td>
+    <td>
+      <video width="100%" controls>
+        <source src="https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/69bed40c-2b07-449e-86b0-349ae7e41d4a" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </td>
+  </tr>
+</table>
+
+
+
 
 
 -----------------
