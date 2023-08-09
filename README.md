@@ -345,32 +345,31 @@ Note that the ```get_oriented_bounding_box``` function from Open3D performs the 
   <tr>
     <td>
       <p align="center">
-        <img src="https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/b567d2f5-4891-4c5b-90ee-ddcc286bd2ea" width="100%" />
+        <img src="https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/702d47ef-15c5-4b31-98ac-6e8b4be95851" width="100%" />
       </p>
     </td>
     <td>
       <p align="center">
-        <img src="https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/77adac85-cfed-49b8-8fb1-5e90a81b25ff" width="100%" />
+        <img src="https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/b567d2f5-4891-4c5b-90ee-ddcc286bd2ea" width="100%" />
       </p>
     </td>
   </tr>
 </table>
 
 
-<img width="563" alt="image" src="https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/e7b8c138-fdcd-48f5-8c1e-5d837ed6f3f7">
 
 
-
-https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/7c95f0dc-e3b9-4929-ae0c-62177c4af85b
-
-<table>
+<table align="center">
   <tr>
-    <td><img src="https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/7c95f0dc-e3b9-4929-ae0c-62177c4af85b" alt="Image 1" style="height: 300px;"></td>
-    <td><img src="https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/69bed40c-2b07-449e-86b0-349ae7e41d4a" alt="Image 2" style="height: 300px;"></td>
+    <td>
+      <img src="https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/2b8bd144-8393-4742-984d-753c783b44aa" alt="GIF 1" style="width: 200%;">
+    </td>
+    <td>
+      <img src="https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/aa73b8b4-2cfc-4a71-8e3d-b20b4e684802" alt="GIF 2" style="width: 200%;">
+    </td>
   </tr>
 </table>
 
-![ezgif com-optimize](https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/a99f62b9-3198-47bb-b38d-4efa0c21ee5e)
 
 
 
