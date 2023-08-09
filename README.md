@@ -362,12 +362,10 @@ Note that the ```get_oriented_bounding_box``` function from Open3D performs the 
 <table align="center">
   <tr>
     <td>
-      <img src="https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/2b8bd144-8393-4742-984d-753c783b44aa" alt="GIF 1" style="width: 200%;">
-    </td>
+      <img src="https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/2b8bd144-8393-4742-984d-753c783b44aa" alt="Image 1" style="height: 300px;"></td>
     <td>
-      <img src="https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/aa73b8b4-2cfc-4a71-8e3d-b20b4e684802" alt="GIF 2" style="width: 200%;">
-    </td>
-  </tr>
+      <img src="https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/aa73b8b4-2cfc-4a71-8e3d-b20b4e684802" alt="Image 1" style="height: 300px;"></td>
+    </td>  </tr>
 </table>
 
 
