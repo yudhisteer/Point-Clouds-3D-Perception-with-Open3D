@@ -202,7 +202,7 @@ https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/dcd6467
 ------------
 
 <a name="dvg"></a>
-## 2. Downsampling with Voxel Grid
+## 3. Downsampling with Voxel Grid
 Notice that when processing our point cloud, it is not necessary to have all the points. In fact, it can a better idea to downsample our point cloud to remove any potential noise, or for faster processing and visualization. The steps to Voxel Grid Downsampling are as follows:
 
 1. **Define the Voxel Size**: Smaller voxel sizes will result in a more detailed point cloud, while larger voxel sizes will lead to more aggressive downsampling.
@@ -244,7 +244,7 @@ The downsampling process results in a point cloud with a reduced number of point
 
 ----------
 <a name="sr"></a>
-## 3. Segmentation with RANSAC
+## 4. Segmentation with RANSAC
 RANSAC (```Random Sample Consensus```) was invented by Fischler and Bolles in ```1981``` as a solution to the problem of fitting models (such as lines, planes, circles, etc.) to noisy data with outliers. The algorithm is widely used in computer vision, image processing, and other fields where robust estimation of model parameters is required.
 
 1. Randomly choose ```s``` samples which is the minimum number of samples to fit a model.
@@ -273,7 +273,7 @@ Observe how the plane which is the road is segmented from all other vertical obj
 
 ------------
 <a name="cd"></a>
-## 4. Clustering with DBSCAN
+## 5. Clustering with DBSCAN
 DBSCAN (Density-Based Spatial Clustering of Applications with Noise) is a density-based clustering algorithm proposed by Martin Ester, Hans-Peter Kriegel, Jörg Sander, and Xiaowei Xu in 1996. It is particularly suitable for datasets with complex structures and a need for automatic cluster detection. 
 
 1. Choose parameters ```ε``` and ```MinPts``` that define the **neighborhood** of a data point and the **minimum points** for forming core points, respectively.
@@ -299,45 +299,48 @@ Notice that the road is one cluster and all the other obstacles are separate clu
 
 ----------
 <a name="3bb"></a>
-## 5. 3D Bounding Box with PCA
+## 6. 3D Bounding Box with PCA
+After successfully clustering our obstacles, the next step is to enclose them within three-dimensional bounding boxes. Given that our operations are conducted in a three-dimensional space, the bounding boxes we create are also in 3D. However, it's essential to recognize that in addition to generating bounding boxes, we require information about their **orientation**. As some obstacles might be positioned at various angles relative to the ego vehicle, we aim to construct bounding boxes that precisely encompass each obstacle and nothing beyond that scope. We will use ```PCA``` for that:
 
+1. Compute the **centroid** of the point cloud subset, which is the center of mass.
 
+2. Calculate the **covariance matrix** for the subset, summarizing dimension relationships.
 
+3. Apply **PCA** to the covariance matrix, finding **eigenvectors** and **eigenvalues**.
 
+4. The eigenvector with the **largest** eigenvalue signifies the longest axis and primary **spread direction**.
 
+5. The eigenvector with the **smallest** eigenvalue indicates the shortest axis and **compression direction**.
 
+6. Use these eigenvectors to define the **orientation** (```rotation```) of the **Oriented Bounding Box** (```OBB```). It aligns the OBB with the eigenvectors, so the box represents the point cloud's **principal directions**.
 
+7. OBB **size** along each axis reflects point **spread** along the corresponding eigenvector.
 
-The function first calculates the centroid of the point cloud subset. The centroid is the average position of all points in the subset, and it represents the center of mass.
+```python
+    obs = []
+    # Group points by cluster label
+    indexes = pd.Series(range(len(labels))).groupby(labels, sort=False).apply(list).tolist()
 
-Next, it computes the covariance matrix of the point cloud subset. The covariance matrix is a square matrix that summarizes the relationships between different dimensions (X, Y, Z) of the point cloud data.
+    # Iterate over clusters and perform PCA
+    for i in range(0, len(indexes)):
+        nb_points = len(outlier_cloud.select_by_index(indexes[i]).points)
+        if nb_points > MIN_POINTS and nb_points < MAX_POINTS:
+            sub_cloud = outlier_cloud.select_by_index(indexes[i])
+            obb = sub_cloud.get_oriented_bounding_box()
+```
 
-PCA is then applied to the covariance matrix to find the eigenvectors and eigenvalues. Eigenvectors are the directions in which the data has the most variation, and eigenvalues represent the magnitude of that variation along each eigenvector.
-
-The eigenvector with the largest eigenvalue corresponds to the longest axis of the OBB and represents the direction in which the point cloud is most spread out. The eigenvector with the smallest eigenvalue corresponds to the shortest axis of the OBB and represents the direction in which the point cloud is most compressed.
-
-The function uses these eigenvectors to define the orientation (rotation) of the OBB. It aligns the OBB with the eigenvectors, so the box represents the point cloud's principal directions.
-
-The size of the OBB along each axis is determined by the spread of the points along the corresponding eigenvector.
-
+Note that the ```get_oriented_bounding_box``` function from Open3D performs the PCA function for us behind the scenes. We use the outlier point cloud subset as these corresponds the cars and other objects whereas the inliers represent the road.
 
 <p align="center">
   <img src="https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/11dc95f4-7052-4ab1-9f04-98518ff023ae" width="70%" />
 </p>
 
-
-
 ----------
+<a name="sr"></a>
+## 7. Surface Reconstruction
 
 
-
-
-<div align="center">
-    <p>Image Source: <a href="https://www.researchgate.net/figure/Illustration-of-several-grouping-principles-Adapted-from-Perceptual-Organization-in_fig1_230587594">A Century of Gestalt Psychology in Visual Perception</a></p>
-</div>
-
-
-
+-----------------
 
 
 
