@@ -332,7 +332,10 @@ After successfully clustering our obstacles, the next step is to enclose them wi
 Note that the ```get_oriented_bounding_box``` function from Open3D performs the PCA function for us behind the scenes. We use the outlier point cloud subset as these correspond to the cars and other objects whereas the inliers represent the road.
 
 <p align="center">
-  <img src="https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/11dc95f4-7052-4ab1-9f04-98518ff023ae
+  <img src="https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/11dc95f4-7052-4ab1-9f04-98518ff023ae" width="70%" />
+</p>
+
+    
 ----------
     
 <a name="sr"></a>
