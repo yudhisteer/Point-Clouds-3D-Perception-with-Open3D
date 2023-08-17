@@ -329,7 +329,7 @@ After successfully clustering our obstacles, the next step is to enclose them wi
             obb = sub_cloud.get_oriented_bounding_box()
 ```
 
-Note that the ```get_oriented_bounding_box``` function from Open3D performs the PCA function for us behind the scenes. We use the outlier point cloud subset as these corresponds the cars and other objects whereas the inliers represent the road.
+Note that the ```get_oriented_bounding_box``` function from Open3D performs the PCA function for us behind the scenes. We use the outlier point cloud subset as these correspond to the cars and other objects whereas the inliers represent the road.
 
 <p align="center">
   <img src="https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/11dc95f4-7052-4ab1-9f04-98518ff023ae
@@ -337,9 +337,15 @@ Note that the ```get_oriented_bounding_box``` function from Open3D performs the 
     
 <a name="sr"></a>
 ## 7. Surface Reconstruction
+For the last part, we will see how we can do surface reconstruction given a point cloud. In order to do that, we first need to compute the ```normals``` of each point in a point cloud. Normals refer to the direction vectors that are **perpendicular** to the surfaces of the points. For each point in the point cloud, a normal vector is calculated to indicate the **direction** of the surface at that point. Normals are used to estimate the **orientation** of surfaces and to **reconstruct** smooth surfaces from a point cloud. For this scenario, I chose to get the point cloud of my jug of water using the LiDAR of an iPhone as shown below:
 
- "normals" refer to the direction vectors that are perpendicular to the surfaces of the points. For each point in the point cloud, a normal vector is calculated to indicate the direction of the surface at that point. Normals are used to estimate the orientation of surfaces and to reconstruct smooth surfaces from a point cloud.
 
+
+We can then visualize the point cloud and the normals with the code below:
+
+```python
+    point_cloud_downsampled.estimate_normals(search_param=o3d.geometry.KDTreeSearchParamHybrid(radius=100, max_nn=30))
+```
 
 <table align="center">
   <tr>
@@ -356,7 +362,18 @@ Note that the ```get_oriented_bounding_box``` function from Open3D performs the 
   </tr>
 </table>
 
+There are several methods that we can do surface reconstruction such as:
 
+#### 1. Alpha Shape
+Alpha Shape is a method that constructs a simplicial complex from a set of points in 2D or 3D space. The complex includes vertices, edges, and faces, which together form a piecewise linear approximation of the point cloud. The parameter "alpha" determines which points are considered part of the shape and which are considered outliers. 
+
+#### 2. Poisson Reconstruction
+Poisson surface reconstruction algorithm is used to create a smooth and continuous surface from an unorganized point cloud. It is based on solving a partial differential equation (PDE) over the volumetric representation of the point cloud. Poisson Reconstruction is particularly effective for capturing fine geometric details in the reconstructed surface.
+
+#### 3. Ball Pivoting
+Ball Pivoting is a surface reconstruction method that works by "pivoting" a ball of a certain radius around each point in the point cloud. The algorithm constructs triangles by connecting the centers of the balls when three balls are in contact. It iteratively adds triangles to the mesh until a closed surface is formed. Ball Pivoting is suitable for reconstructing complex and irregular shapes, and it often produces watertight surfaces.
+
+Below is an example using Alpha Shape (left) and using Mesh Lab (right):
 
 
 <table align="center">
