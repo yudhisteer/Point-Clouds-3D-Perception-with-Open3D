@@ -393,9 +393,15 @@ Below is an example using Alpha Shape (left) and using Mesh Lab (right):
 
 
 ## References:
-1. https://www.generationrobots.com/blog/en/what-is-lidar-technology/#:~:text=Scanning%20technology&text=Scanning%20LiDAR%20typically%20spin%20and,frequency%20between%201Hz%20and%20100Hz.
-2. https://velodynelidar.com/blog/guide-to-lidar-wavelengths/
-3. https://www.neonscience.org/resources/learning-hub/tutorials/lidar-basics
-4. https://www.neonscience.org/resources/learning-hub/tutorials/plasio-view-pointclouds
-5. https://towardsdatascience.com/random-sample-consensus-helps-you-filter-those-pesky-outliers-9dbfbb8b668f
-6. https://www.youtube.com/watch?v=EkYXjmiolBg&ab_channel=FirstPrinciplesofComputerVision
+[1] Generation Robots. (n.d.). What is LiDAR Technology? Scanning technology. Webpage. [https://www.generationrobots.com/blog/en/what-is-lidar-technology/#:~:text=Scanning%20technology&text=Scanning%20LiDAR%20typically%20spin%20and,frequency%20between%201Hz%20and%20100Hz.](https://www.generationrobots.com/blog/en/what-is-lidar-technology/#:~:text=Scanning%20technology&text=Scanning%20LiDAR%20typically%20spin%20and,frequency%20between%201Hz%20and%20100Hz.)
+
+[2] Velodyne LiDAR. (n.d.). A Guide to LiDAR Wavelengths. Webpage. [https://velodynelidar.com/blog/guide-to-lidar-wavelengths/](https://velodynelidar.com/blog/guide-to-lidar-wavelengths/)
+
+[3] NEON Science. (n.d.). LiDAR Basics. Webpage. [https://www.neonscience.org/resources/learning-hub/tutorials/lidar-basics](https://www.neonscience.org/resources/learning-hub/tutorials/lidar-basics)
+
+[4] NEON Science. (n.d.). Plasio: View Point Clouds. Webpage. [https://www.neonscience.org/resources/learning-hub/tutorials/plasio-view-pointclouds](https://www.neonscience.org/resources/learning-hub/tutorials/plasio-view-pointclouds)
+
+[5] Towards Data Science. (n.d.). Random Sample Consensus Helps You Filter Those Pesky Outliers. Webpage. [https://towardsdatascience.com/random-sample-consensus-helps-you-filter-those-pesky-outliers-9dbfbb8b668f](https://towardsdatascience.com/random-sample-consensus-helps-you-filter-those-pesky-outliers-9dbfbb8b668f)
+
+[6] First Principles of Computer Vision. (n.d.). LiDAR Sensor - Light Detection and Ranging. YouTube video. [https://www.youtube.com/watch?v=EkYXjmiolBg&ab_channel=FirstPrinciplesofComputerVision](https://www.youtube.com/watch?v=EkYXjmiolBg&ab_channel=FirstPrinciplesofComputerVision)
+
