@@ -403,7 +403,7 @@ Below is an example using Alpha Shape (left) and using Mesh Lab (right):
 
 
 ## References:
-[1] Generation Robots. (n.d.). What is LiDAR Technology? Scanning technology. Webpage. [https://www.generationrobots.com/blog/en/what-is-lidar-technology/#:~:text=Scanning%20technology&text=Scanning%20LiDAR%20typically%20spin%20and,frequency%20between%201Hz%20and%20100Hz.](https://www.generationrobots.com/blog/en/what-is-lidar-technology/#:~:text=Scanning%20technology&text=Scanning%20LiDAR%20typically%20spin%20and,frequency%20between%201Hz%20and%20100Hz.)
+[1] Generation Robots. (n.d.). What is LiDAR Technology? Scanning technology. Webpage. [https://www.generationrobots.com/blog/en/what-is-lidar-technology
 
 [2] Velodyne LiDAR. (n.d.). A Guide to LiDAR Wavelengths. Webpage. [https://velodynelidar.com/blog/guide-to-lidar-wavelengths/](https://velodynelidar.com/blog/guide-to-lidar-wavelengths/)
 
