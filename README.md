@@ -9,7 +9,7 @@
 1. [Understanding LiDARs](#ul)
 2. [Point Cloud Processing](#pcl)
 3. [Downsampling with Voxel Grid](#dvg)
-4. [Segmentation with RANSAC](#sr)
+4. [Segmentation with RANSAC](#swr)
 5. [Clustering with DBSCAN](#cd)
 6. [3D Bounding Box with PCA](#3bb)
 7. [Surface Reconstruction](#sr)
@@ -243,7 +243,7 @@ The downsampling process results in a point cloud with a reduced number of point
 
 
 ----------
-<a name="sr"></a>
+<a name="swr"></a>
 ## 4. Segmentation with RANSAC
 RANSAC (```Random Sample Consensus```) was invented by Fischler and Bolles in ```1981``` as a solution to the problem of fitting models (such as lines, planes, circles, etc.) to noisy data with outliers. The algorithm is widely used in computer vision, image processing, and other fields where robust estimation of model parameters is required.
 
