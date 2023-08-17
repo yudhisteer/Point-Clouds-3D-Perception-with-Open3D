@@ -392,7 +392,7 @@ Below is an example using Alpha Shape (left) and using Mesh Lab (right):
       <img src="https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/2b8bd144-8393-4742-984d-753c783b44aa" alt="Image 1" style="height: 300px;"></td>
     <td>
       <img src="https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/aa73b8b4-2cfc-4a71-8e3d-b20b4e684802" alt="Image 1" style="height: 300px;"></td>
-    </td>  </tr>
+   </tr>
 </table>
 
 
