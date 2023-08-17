@@ -365,13 +365,20 @@ We can then visualize the point cloud and the normals with the code below:
 There are several methods that we can do surface reconstruction such as:
 
 #### 1. Alpha Shape
-Alpha Shape is a method that constructs a simplicial complex from a set of points in 2D or 3D space. The complex includes vertices, edges, and faces, which together form a piecewise linear approximation of the point cloud. The parameter "alpha" determines which points are considered part of the shape and which are considered outliers. 
+- Constructs a simplicial complex from a set of points in 2D or 3D space.
+- The complex includes vertices, edges, and faces, which together form a piecewise linear approximation of the point cloud.
+- The parameter "alpha" determines which points are considered part of the shape and which are considered outliers. 
 
 #### 2. Poisson Reconstruction
-Poisson surface reconstruction algorithm is used to create a smooth and continuous surface from an unorganized point cloud. It is based on solving a partial differential equation (PDE) over the volumetric representation of the point cloud. Poisson Reconstruction is particularly effective for capturing fine geometric details in the reconstructed surface.
+- Used to create a smooth and continuous surface from an unorganized point cloud.
+- Based on solving a partial differential equation (PDE) over the volumetric representation of the point cloud.
+- It is particularly effective for capturing fine geometric details in the reconstructed surface.
 
 #### 3. Ball Pivoting
-Ball Pivoting is a surface reconstruction method that works by "pivoting" a ball of a certain radius around each point in the point cloud. The algorithm constructs triangles by connecting the centers of the balls when three balls are in contact. It iteratively adds triangles to the mesh until a closed surface is formed. Ball Pivoting is suitable for reconstructing complex and irregular shapes, and it often produces watertight surfaces.
+- Works by "pivoting" a ball of a certain radius around each point in the point cloud.
+- Constructs triangles by connecting the centers of the balls when three balls are in contact.
+- It iteratively adds triangles to the mesh until a closed surface is formed.
+- It is suitable for reconstructing complex and irregular shapes, and it often produces watertight surfaces.
 
 Below is an example using Alpha Shape (left) and using Mesh Lab (right):
 
