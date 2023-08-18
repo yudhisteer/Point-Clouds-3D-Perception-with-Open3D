@@ -173,10 +173,21 @@ Below is an explanation of different channels of LiDARS with different FoV from 
   <img src="https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/128a26c2-8b08-4818-abbd-eda5a8ad449d9" width="70%" />
 </p>
 <div align="center">
-    <p>Image source: <a href="https://velodynelidar.com/blog/guide-to-lidar-wavelengths/">A Guide to Lidar Wavelengths for Autonomous Vehicles and Driver Assistance</a></p>
+    <p>Image source: <a href="https://velodynelidar.com/blog/guide-to-lidar-wavelengths/">Harness distribution comparison</a></p>
 </div>
 
 #### 1.4.3 Dual Return
+
+
+
+
+
+
+
+
+
+
+
 
 
 ----------
