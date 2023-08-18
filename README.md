@@ -130,25 +130,24 @@ Note that we divide by ```2``` in the equation because we only want
 </div>
 
 
+### 1.4 Other Parameters
 
-#### 1.3.3 Other Parameters
-
-
-
+#### 1.4.1 Wavelength
 
 
 
+<p align="center">
+  <img src="https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/853f8b73-34f5-4bed-8bb2-4c2caa7a0709" width="70%" />
+</p>
 
-<img width="492" alt="image" src="https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/128a26c2-8b08-4818-abbd-eda5a8ad449d">
 
 
-<div style="text-align: center;">
-  <video src="https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/638b192e-514c-4c42-a379-506865178e8d" controls="controls" style="max-width: 730px;">
-  </video>
-</div>
-<div align="center">
-    <p>Video source: <a href="https://ouster.com/products/">Ouster's Rotating LiDAR point cloud</a></p>
-</div>
+<p align="center">
+  <img src="https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/128a26c2-8b08-4818-abbd-eda5a8ad449d9" width="70%" />
+</p>
+
+
+
 
 ----------
 <a name="pcl"></a>
