@@ -97,9 +97,10 @@ Note that we divide by ```2``` in the equation because we only want
 
 
 
-<video src="https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/e90b1a31-c6bb-4036-8338-0d389de7a5d0" controls="controls" style="max-width: 730px;">
-</video>
-
+<div style="text-align: center;">
+  <video src="https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/e90b1a31-c6bb-4036-8338-0d389de7a5d0" controls="controls" style="max-width: 730px;">
+  </video>
+</div>
 <div align="center">
     <p>Video source: <a href="https://www.aeva.com/">Aeva's Aeries II: The World’s First 4D LiDAR With Camera-Level Resolution</a></p>
 </div>
