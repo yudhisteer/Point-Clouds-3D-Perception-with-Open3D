@@ -157,6 +157,18 @@ The number of lasers in the vertical direction is called channels for the lidar 
     <p>Image source: <a href="https://www.hesaitech.com/things-you-need-to-know-about-lidar-the-more-lasers-the-better/">16 channels / 128 channels / 64 channels simulated point cloud</a></p>
 </div>
 
+The number of points per second that a LiDAR sensor can generate depends on several factors, including the laser pulse repetition rate, the field of view (FoV), the scanning pattern, and the scanning speed. 
+
+      Number of Points per Second = Laser Pulse Repetition Rate × Number of Laser Beams × Scanning Density
+
+Where:
+
+- **Laser Pulse Repetition Rate**: The rate at which laser pulses are emitted by the LiDAR system (in pulses per second).
+- **Number of Laser Beams**: The total number of individual laser beams or channels in the LiDAR system.
+- **Scanning Density**: The density of measurements in the scanned area, often measured in points per square meter or points per degree.
+
+Below is an explanation of different channels of LiDARS with different FoV from RoboSense:
+
 <p align="center">
   <img src="https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/128a26c2-8b08-4818-abbd-eda5a8ad449d9" width="70%" />
 </p>
@@ -164,7 +176,7 @@ The number of lasers in the vertical direction is called channels for the lidar 
     <p>Image source: <a href="https://velodynelidar.com/blog/guide-to-lidar-wavelengths/">A Guide to Lidar Wavelengths for Autonomous Vehicles and Driver Assistance</a></p>
 </div>
 
-#### 1.4.3 Wavelength
+#### 1.4.3 Dual Return
 
 
 ----------
