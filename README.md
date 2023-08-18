@@ -117,6 +117,9 @@ Note that we divide by ```2``` in the equation because we only want
 
 **3. Continuous: FMCW**: Emits a continuous laser beam with a varying frequency. The frequency shift of the reflected light is used to determine the distance to the target. FMCW LiDAR is particularly useful for velocity measurements, as it can also capture the Doppler shift caused by moving objects. 
 
+<p align="center">
+  <img src="https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/0528e774-45be-4461-854e-cb88c2d68d5b" width="60%" />
+</p>
 
 
 
