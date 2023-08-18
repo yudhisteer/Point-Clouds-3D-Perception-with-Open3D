@@ -72,6 +72,13 @@ Note that we divide by ```2``` in the equation because we only want
 </p>
 
 
+**1. 2D**: Measures distances in ```2D space```, typically along a ```single plane```. 2D LiDAR provides information about the ```distances``` and ```angles``` of objects in that plane but does not capture information about objects in the ```vertical``` direction.
+
+**2. 3D**: Measures distances in ```3D space```, providing information about objects in both the ```horizontal``` and ```vertical``` directions. Each point in the point cloud contains the X, Y, and Z coordinates. By calculating the ```distance``` and ```angle``` of the laser beams, 3D LiDAR generates a ```3D point cloud``` that represents the surveyed scene.
+
+**3. 4D**: In addition to measuring distances in 3D space (X, Y, and Z), 4D LiDAR also captures the ```time-of-flight``` for each laser pulse. This additional temporal data allows us to measure the ```speed``` and ```movement``` of objects over time.
+
+
 
 #### 1.3.3 Modulation
 
