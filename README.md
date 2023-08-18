@@ -109,6 +109,32 @@ Note that we divide by ```2``` in the equation because we only want
   <img src="https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/d8dee0e4-9eb4-49c7-a49a-4b10f0345cab" width="30%" />
 </p>
 
+**1. Discrete**: Operates by emitting individual laser pulses to measure distances where each pulse illuminates a single point on the target surface. By calculating the time-of-flight, the distance to the object can be determined.
+
+**2. Continuous: AMCW**: Emits a continuous laser beam with a modulated intensity. The modulation allows the LiDAR system to differentiate between the emitted light and the reflected light from the target surface. By analyzing the modulation phase shift, the system can calculate the distance to the object. 
+
+**3. Continuous: FMCW**: Emits a continuous laser beam with a varying frequency. The frequency shift of the reflected light is used to determine the distance to the target. FMCW LiDAR is particularly useful for velocity measurements, as it can also capture the Doppler shift caused by moving objects. 
+
+
+
+
+
+<div style="text-align: center;">
+  <video src="https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/4227871f-d92c-4a03-adeb-9fb07df650c6" controls="controls" style="max-width: 730px;">
+  </video>
+</div>
+<div align="center">
+    <p>Video source: <a href="https://www.aeva.com/aeries-ii/">Aeva’s FMCW technology is resistant to interference from sunlight and other LiDAR sensors</a></p>
+</div>
+
+
+
+#### 1.3.3 Other Parameters
+
+
+
+
+
 
 
 <img width="492" alt="image" src="https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/128a26c2-8b08-4818-abbd-eda5a8ad449d">
