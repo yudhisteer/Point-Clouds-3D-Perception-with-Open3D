@@ -38,6 +38,8 @@ Note that we divide by ```2``` in the equation because we only want
 - **Intensity**: Amount of energy that returned to the sensor
 - **Peaks**: Areas where more photons or more light energy returns to the sensor
 
+
+
 ### 1.3 Types of LiDAR
 
 #### 1.3.1 Scanning
@@ -65,6 +67,18 @@ Note that we divide by ```2``` in the equation because we only want
     <p>Image Source: <a href="https://www.semanticscholar.org/paper/Lidar-for-Autonomous-Driving%3A-The-Principles%2C-and-Li-Iba%C3%B1ez-Guzm%C3%A1n/586e90ae16e480217709e735f5aa0752aedc8e62">Lidar for Autonomous Driving: The Principles, Challenges, and Trends for Automotive Lidar and Perception Systems</a></p>
 </div>
 
+
+
+<video src="https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/638b192e-514c-4c42-a379-506865178e8d" controls="controls" style="max-width: 730px;">
+</video>
+
+<div align="center">
+    <p>Video source: <a href="https://ouster.com/products/">Ouster's Rotating LiDAR point cloud</a></p>
+</div>
+
+
+
+
 #### 1.3.2 Dimension
 
 <p align="center">
@@ -84,7 +98,7 @@ Note that we divide by ```2``` in the equation because we only want
 </video>
 
 <div align="center">
-    <p>Video source: <a href="https://www.aeva.com/">Aeva's Aeries II: The World’s First 4D LiDARTM With Camera-Level Resolution</a></p>
+    <p>Video source: <a href="https://www.aeva.com/">Aeva's Aeries II: The World’s First 4D LiDAR With Camera-Level Resolution</a></p>
 </div>
 
 #### 1.3.3 Modulation
