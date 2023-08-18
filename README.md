@@ -111,11 +111,11 @@ Note that we divide by ```2``` in the equation because we only want
   <img src="https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/d8dee0e4-9eb4-49c7-a49a-4b10f0345cab" width="30%" />
 </p>
 
-**1. Discrete**: Operates by emitting individual laser pulses to measure distances where each pulse illuminates a single point on the target surface. By calculating the time-of-flight, the distance to the object can be determined.
+**1. Discrete**: Operates by emitting individual ```laser pulses``` to measure distances where each pulse illuminates a ```single point``` on the target surface. By calculating the ```time-of-flight```, the distance to the object can be determined.
 
-**2. Continuous: AMCW**: Emits a continuous laser beam with a modulated intensity. The modulation allows the LiDAR system to differentiate between the emitted light and the reflected light from the target surface. By analyzing the modulation phase shift, the system can calculate the distance to the object. 
+**2. Continuous: Amplitude-Modulated Continuous Wave (AMCW)**: Emits a continuous laser beam with a ```modulated intensity```. The modulation allows the LiDAR system to differentiate between the emitted light and the reflected light from the target surface. By analyzing the ```modulation phase shift```, the system can calculate the ```distance``` to the object. 
 
-**3. Continuous: FMCW**: Emits a continuous laser beam with a varying frequency. The frequency shift of the reflected light is used to determine the distance to the target. FMCW LiDAR is particularly useful for velocity measurements, as it can also capture the Doppler shift caused by moving objects. 
+**3. Continuous:  Frequency-Modulated Continuous Wave (FMCW)**: Emits a continuous laser beam with a ```varying frequency```. The ```frequency shift``` of the reflected light is used to determine the ```distance``` to the target. FMCW LiDAR is particularly useful for ```velocity``` measurements, as it can also capture the ```Doppler shift``` caused by moving objects. 
 
 <p align="center">
   <img src="https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/0528e774-45be-4461-854e-cb88c2d68d5b" width="60%" />
