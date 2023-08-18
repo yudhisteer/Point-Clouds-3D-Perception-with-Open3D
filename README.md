@@ -136,20 +136,35 @@ Note that we divide by ```2``` in the equation because we only want
 ### 1.4 Other Parameters
 
 #### 1.4.1 Wavelength
-
-
+LiDARs operate using laser light to measure distances and create 3D representations of environments. The choice of the working wavelength, such as ```905 nm``` and ```1550 nm```, has implications for the system's performance, safety, and interaction with the environment. Here's an overview of these wavelengths as illustrated by Velodyne:
 
 <p align="center">
   <img src="https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/853f8b73-34f5-4bed-8bb2-4c2caa7a0709" width="70%" />
 </p>
+<div align="center">
+    <p>Image source: <a href="https://velodynelidar.com/blog/guide-to-lidar-wavelengths/">A Guide to Lidar Wavelengths for Autonomous Vehicles and Driver Assistance</a></p>
+</div>
 
+Shorter wavelengths like ```905 nm``` are favored for high-precision applications where detailed and accurate measurements are crucial. Longer wavelengths like ```1550 nm``` are chosen for their potential to provide extended range and better performance in challenging environments while maintaining a higher level of eye safety.
 
+#### 1.4.2 Resolution
+The number of lasers in the vertical direction is called channels for the lidar with 360-degree spinning and 1D rotating mirror structure. In a general sense, a greater number of channels corresponds to an increased quantity of lasers, leading to an enhanced overall performance of LiDAR technology.
+
+<p align="center">
+  <img src="https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/e96918e3-5cc8-4d14-874b-8dd1622989c0" width="70%" />
+</p>
+<div align="center">
+    <p>Image source: <a href="https://www.hesaitech.com/things-you-need-to-know-about-lidar-the-more-lasers-the-better/">16 channels / 128 channels / 64 channels simulated point cloud</a></p>
+</div>
 
 <p align="center">
   <img src="https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/128a26c2-8b08-4818-abbd-eda5a8ad449d9" width="70%" />
 </p>
+<div align="center">
+    <p>Image source: <a href="https://velodynelidar.com/blog/guide-to-lidar-wavelengths/">A Guide to Lidar Wavelengths for Autonomous Vehicles and Driver Assistance</a></p>
+</div>
 
-
+#### 1.4.3 Wavelength
 
 
 ----------
