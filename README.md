@@ -80,12 +80,22 @@ Note that we divide by ```2``` in the equation because we only want
 
 
 
+<video src="https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/e90b1a31-c6bb-4036-8338-0d389de7a5d0" controls="controls" style="max-width: 730px;">
+</video>
+
+<div align="center">
+    <p>Video source: <a href="https://www.aeva.com/">Aeva's Aeries II: The World’s First 4D LiDARTM With Camera-Level Resolution</a></p>
+</div>
+
 #### 1.3.3 Modulation
 
 <p align="center">
   <img src="https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/d8dee0e4-9eb4-49c7-a49a-4b10f0345cab" width="30%" />
 </p>
 
+
+
+<img width="492" alt="image" src="https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/128a26c2-8b08-4818-abbd-eda5a8ad449d">
 
 
 
@@ -404,7 +414,6 @@ Below is an example using Alpha Shape (left) and using Mesh Lab (right):
 
 
 
-
 -----------------
 
 
@@ -421,4 +430,6 @@ Below is an example using Alpha Shape (left) and using Mesh Lab (right):
 [5] Towards Data Science. (n.d.). Random Sample Consensus Helps You Filter Those Pesky Outliers. Webpage. [https://towardsdatascience.com/random-sample-consensus-helps-you-filter-those-pesky-outliers-9dbfbb8b668f](https://towardsdatascience.com/random-sample-consensus-helps-you-filter-those-pesky-outliers-9dbfbb8b668f)
 
 [6] First Principles of Computer Vision. (n.d.). LiDAR Sensor - Light Detection and Ranging. YouTube video. [https://www.youtube.com/watch?v=EkYXjmiolBg&ab_channel=FirstPrinciplesofComputerVision](https://www.youtube.com/watch?v=EkYXjmiolBg&ab_channel=FirstPrinciplesofComputerVision)
+
+[7] https://www.aeva.com/aeries-ii/
 
