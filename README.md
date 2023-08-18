@@ -60,22 +60,23 @@ Note that we divide by ```2``` in the equation because we only want
 **3. Flash LiDAR**: Also known as ```single-shot``` or ```non-scanning``` LiDAR, illuminates the entire field of view ```simultaneously``` with a single pulse of laser light. This type of LiDAR offers high data acquisition rates, making it suitable for real-time applications.
 
 
+
 <p align="center">
   <img src="https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/4cf1c007-dace-48fb-b532-56392e335cad" width="50%" />
 </p>
-
 <div align="center">
     <p>Image Source: <a href="https://www.semanticscholar.org/paper/Lidar-for-Autonomous-Driving%3A-The-Principles%2C-and-Li-Iba%C3%B1ez-Guzm%C3%A1n/586e90ae16e480217709e735f5aa0752aedc8e62">Lidar for Autonomous Driving: The Principles, Challenges, and Trends for Automotive Lidar and Perception Systems</a></p>
 </div>
 
 
 
+
 <div style="text-align: center;">
-  <video src="https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/638b192e-514c-4c42-a379-506865178e8d" controls="controls" style="max-width: 730px;">
+  <video src="https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/9bd0ccf2-fb23-4599-8b65-51f7440d8444" controls="controls" style="max-width: 730px;">
   </video>
 </div>
 <div align="center">
-    <p>Video source: <a href="https://ouster.com/products/">Ouster's Rotating LiDAR point cloud</a></p>
+    <p>Video source: <a href="https://www.youtube.com/watch?v=fFEmWubsE8U&ab_channel=Ouster">How Ouster Digital Lidar works</a></p>
 </div>
 
 
@@ -140,6 +141,13 @@ Note that we divide by ```2``` in the equation because we only want
 <img width="492" alt="image" src="https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/128a26c2-8b08-4818-abbd-eda5a8ad449d">
 
 
+<div style="text-align: center;">
+  <video src="https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/638b192e-514c-4c42-a379-506865178e8d" controls="controls" style="max-width: 730px;">
+  </video>
+</div>
+<div align="center">
+    <p>Video source: <a href="https://ouster.com/products/">Ouster's Rotating LiDAR point cloud</a></p>
+</div>
 
 ----------
 <a name="pcl"></a>
