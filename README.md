@@ -31,13 +31,11 @@ LiDAR technology operates by emitting short laser **pulses** toward the target a
   <img src="https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/16ef46d1-7bc3-4912-a923-6790c8b1d1b5.png"/>
 </p>
 
-Note that we divide by ```2``` in the equation because we only want  
-
+Note that we divide by ```2``` in the equation because we only want the distance from the object to the lidar.
 
 - **Waveform**: Distribution of energy that returns to the sensor 
 - **Intensity**: Amount of energy that returned to the sensor
 - **Peaks**: Areas where more photons or more light energy returns to the sensor
-
 
 
 ### 1.3 Types of LiDAR
@@ -408,7 +406,7 @@ Notice that the road is one cluster and all the other obstacles are separate clu
 ----------
 <a name="3bb"></a>
 ## 6. 3D Bounding Box with PCA
-After successfully clustering our obstacles, the next step is to enclose them within three-dimensional bounding boxes. Given that our operations are conducted in a three-dimensional space, the bounding boxes we create are also in 3D. However, it's essential to recognize that in addition to generating bounding boxes, we require information about their **orientation**. As some obstacles might be positioned at various angles relative to the ego vehicle, we aim to construct bounding boxes that precisely encompass each obstacle and nothing beyond that scope. We will use ```PCA``` for that:
+After successfully clustering our obstacles, the next step is to enclose them within 3D bounding boxes. Given that we are working in a 3D space, the bounding boxes we create are also in 3D. However, it's essential to recognize that in addition to generating bounding boxes, we require information about their **orientation**. As some obstacles might be positioned at various angles relative to the ego vehicle, we aim to construct bounding boxes that precisely encompass each obstacle. We will use ```PCA``` for that:
 
 1. Compute the **centroid** of the point cloud subset, which is the center of mass.
 
@@ -448,7 +446,7 @@ Note that the ```get_oriented_bounding_box``` function from Open3D performs the 
     
 <a name="sr"></a>
 ## 7. Surface Reconstruction
-For the last part, we will see how we can do surface reconstruction given a point cloud. In order to do that, we first need to compute the ```normals``` of each point in a point cloud. Normals refer to the direction vectors that are **perpendicular** to the surfaces of the points. For each point in the point cloud, a normal vector is calculated to indicate the **direction** of the surface at that point. Normals are used to estimate the **orientation** of surfaces and to **reconstruct** smooth surfaces from a point cloud. For this scenario, I chose to get the point cloud of my jug of water using the LiDAR of an iPhone as shown below:
+For the last part, we will see how we can do surface reconstruction given a point cloud. To do that, we first need to compute the ```normals``` of each point in a point cloud. Normals refer to the direction vectors that are **perpendicular** to the surfaces of the points. For each point in the point cloud, a normal vector is calculated to indicate the **direction** of the surface at that point. Normals are used to estimate the **orientation** of surfaces and to **reconstruct** smooth surfaces from a point cloud. For this scenario, I chose to get the point cloud of my jug of water using the LiDAR of an iPhone as shown below:
 
 
 
