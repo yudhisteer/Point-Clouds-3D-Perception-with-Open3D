@@ -177,13 +177,9 @@ Below is an explanation of different channels of LiDARS with different FoV from 
 </div>
 
 #### 1.4.3 Dual Return
+Dual return in LiDAR refers to the capability of a LiDAR sensor to detect and differentiate between **multiple returns** from a single laser pulse. This is particularly useful in scenarios where the laser pulse hits objects that have **multiple surfaces** or **reflective materials**. The dual return system records both the first and the last returns.
 
-
-
-
-
-
-
+In drone delivery with LiDAR, dual return plays a crucial role in obstacle detection and safe navigation. As the drone descends to make a delivery, the LiDAR sensor emits laser pulses that bounce back from various surfaces. The first return captures data from obstacles closer to the drone, like buildings or trees. The last return records reflections from farther objects such as power lines or tall structures. By analyzing these dual returns, the drone's navigation system can accurately identify potential obstacles and their distances, allowing it to adjust its flight path in real time to avoid collisions.
 
 
 
