@@ -182,10 +182,11 @@ Dual return in LiDAR refers to the capability of a LiDAR sensor to detect and di
 In drone delivery with LiDAR, dual return plays a crucial role in obstacle detection and safe navigation. As the drone descends to make a delivery, the LiDAR sensor emits laser pulses that bounce back from various surfaces. The first return captures data from obstacles closer to the drone, like buildings or trees. The last return records reflections from farther objects such as power lines or tall structures. By analyzing these dual returns, the drone's navigation system can accurately identify potential obstacles and their distances, allowing it to adjust its flight path in real time to avoid collisions.
 
 <p align="center">
-  <img src="https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/bf32fe96-700a-4f74-93a2-522da11c061b" width="70%" />
+  <img src="https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/132ade88-4b34-4520-93d8-b096840a4a43" width="60%" />
 </p>
-
-
+<div align="center">
+    <p>Image source: <a href="https://velodynelidar.com/blog/guide-to-lidar-wavelengths/">An Introduction to LiDAR</a></p>
+</div>
 
 
 
