@@ -524,3 +524,5 @@ Below is an example using Alpha Shape (left) and using Mesh Lab (right):
 
 [7] https://www.aeva.com/aeries-ii/
 
+[8] http://www.open3d.org/
+
