@@ -176,7 +176,6 @@ Below is an explanation of different channels of LiDARS with different FoV from 
     <p>Image source: <a href="https://velodynelidar.com/blog/guide-to-lidar-wavelengths/">Harness distribution comparison</a></p>
 </div>
 
-
 Below is a video of me testing a 2D RPLiDAR:
 
 <div style="text-align: center;">
