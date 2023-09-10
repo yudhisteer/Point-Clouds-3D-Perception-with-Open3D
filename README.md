@@ -145,10 +145,10 @@ LiDARs operate using laser light to measure distances and create 3D representati
     <p>Image source: <a href="https://velodynelidar.com/blog/guide-to-lidar-wavelengths/">A Guide to Lidar Wavelengths for Autonomous Vehicles and Driver Assistance</a></p>
 </div>
 
-Shorter wavelengths like ```905 nm``` are favored for high-precision applications where detailed and accurate measurements are crucial. Longer wavelengths like ```1550 nm``` are chosen for their potential to provide extended range and better performance in challenging environments while maintaining a higher level of eye safety.
+Shorter wavelengths like ```905 nm``` are favored for **high-precision applications** where detailed and accurate measurements are crucial. Longer wavelengths like ```1550 nm``` are chosen for their potential to provide **extended range** and better performance in challenging environments while maintaining a higher level of eye safety.
 
 #### 1.4.2 Resolution
-The number of lasers in the vertical direction is called channels for the lidar with 360-degree spinning and 1D rotating mirror structure. In a general sense, a greater number of channels corresponds to an increased quantity of lasers, leading to an enhanced overall performance of LiDAR technology.
+The number of lasers in the vertical direction is called channels for the lidar. In a general sense, a ```greater number of channels``` corresponds to an ```increased quantity of lasers```, leading to an **enhanced overall performance** of LiDAR technology.
 
 <p align="center">
   <img src="https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/e96918e3-5cc8-4d14-874b-8dd1622989c0" width="70%" />
@@ -157,7 +157,7 @@ The number of lasers in the vertical direction is called channels for the lidar 
     <p>Image source: <a href="https://www.hesaitech.com/things-you-need-to-know-about-lidar-the-more-lasers-the-better/">16 channels / 128 channels / 64 channels simulated point cloud</a></p>
 </div>
 
-The number of points per second that a LiDAR sensor can generate depends on several factors, including the laser pulse repetition rate, the field of view (FoV), the scanning pattern, and the scanning speed. 
+The number of points per second that a LiDAR sensor can generate depends on several factors, including the ```laser pulse repetition rate```, the ```field of view (FoV)```, the ```scanning pattern```, and the ```scanning speed```. 
 
       Number of Points per Second = Laser Pulse Repetition Rate × Number of Laser Beams × Scanning Density
 
