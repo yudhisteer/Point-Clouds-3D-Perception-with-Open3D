@@ -176,6 +176,14 @@ Below is an explanation of different channels of LiDARS with different FoV from 
     <p>Image source: <a href="https://velodynelidar.com/blog/guide-to-lidar-wavelengths/">Harness distribution comparison</a></p>
 </div>
 
+
+Below is a video of me testing a 2D RPLiDAR:
+
+<div style="text-align: center;">
+  <video src="https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/3cd664b4-adce-4234-99be-5f01843e54aa" controls="controls" style="max-width: 730px;">
+  </video>
+
+
 #### 1.4.3 Dual Return
 Dual return in LiDAR refers to the capability of a LiDAR sensor to detect and differentiate between **multiple returns** from a single laser pulse. This is particularly useful in scenarios where the laser pulse hits objects that have **multiple surfaces** or **reflective materials**. The dual return system records both the first and the last returns.
 
