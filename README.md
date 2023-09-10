@@ -527,7 +527,7 @@ Below is an example using Alpha Shape (left) and using Mesh Lab (right):
 
 [5] Towards Data Science. (n.d.). Random Sample Consensus Helps You Filter Those Pesky Outliers. Webpage. [https://towardsdatascience.com/random-sample-consensus-helps-you-filter-those-pesky-outliers-9dbfbb8b668f](https://towardsdatascience.com/random-sample-consensus-helps-you-filter-those-pesky-outliers-9dbfbb8b668f)
 
-[6] First Principles of Computer Vision. (n.d.). Dealing with Outliers: RANSAC | Image Stitching [https://www.youtube.com/watch?v=EkYXjmiolBg&ab_channel=FirstPrinciplesofComputerVision](https://www.youtube.com/watch?v=EkYXjmiolBg&ab_channel=FirstPrinciplesofComputerVision)
+[6] First Principles of Computer Vision. (n.d.). Dealing with Outliers: RANSAC | Image Stitching. YouTube. [https://www.youtube.com/watch?v=EkYXjmiolBg&ab_channel=FirstPrinciplesofComputerVision](https://www.youtube.com/watch?v=EkYXjmiolBg&ab_channel=FirstPrinciplesofComputerVision)
 
 [7] AEVA. (n.d.). Aeries II. [Website]. [https://www.aeva.com/aeries-ii/](https://www.aeva.com/aeries-ii/)
 
