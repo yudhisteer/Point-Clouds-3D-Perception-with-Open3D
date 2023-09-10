@@ -29,7 +29,7 @@ LiDAR stands for ```Light Detection And Ranging```. It is a **active remote sens
 LiDAR technology operates by emitting short laser **pulses** toward the target area. These pulses hit surrounding objects and return to the LiDAR sensor. By calculating the time it takes for the pulses to return (**time of flight**), the system determines the **distance** to each object with incredible accuracy. Additionally, LiDAR can measure the **intensity** of the returned laser light, providing information about the objects' **reflectivity** or **composition**.
 
 
-    Speed = (Distance of light x time of flight) / 2
+    Distance = (Speed of light x time of flight) / 2
 
 Note that we divide by ```2``` in the equation because we only want the distance from the object to the lidar.
 
