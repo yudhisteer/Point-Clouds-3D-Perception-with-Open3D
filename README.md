@@ -310,7 +310,12 @@ When we are satisfied with our selected ROI, we then need to create a **pipeline
 
 Below is a video of the output:
 
-https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/dcd64671-662e-4b8c-a5c9-adbd0d795dff
+<div style="text-align: center;">
+  <video src="https://github.com/yudhisteer/Point-Clouds-3D-Perception/assets/59663734/dcd64671-662e-4b8c-a5c9-adbd0d795dff" controls="controls" style="max-width: 730px;">
+  </video>
+</div>
+
+
 
 ------------
 
