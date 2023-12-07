@@ -1,4 +1,4 @@
-# Point Clouds: 3D Perception
+# Point Clouds: 3D Perception with Open3D
 
 ## Problem Statement
 In the context of drone delivery, ensuring precise and obstacle-free navigation remains a critical challenge. Cameras, though effective in specific scenarios, encounter drawbacks such as **reduced visibility** during **bad weather** or in **low-light conditions**. Unlike stereo cameras, monocular cameras face challenges when it comes to accurately perceiving complex 3D environments. Additionally, the challenge lies in classifying all potential obstacles within the environment—ranging from trees and power lines to streetlight poles and other drones. The finite dataset upon which obstacle detection operates **cannot** encompass every object present. However, **3D data** circumvents the need to recognize individual objects, focusing instead on their **positions** and **velocities** relative to the drone. This information empowers an **unsupervised optimization** of the obstacle avoidance system, enhancing operational efficiency.
